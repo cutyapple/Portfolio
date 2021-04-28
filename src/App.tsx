@@ -1,16 +1,17 @@
 import React from 'react';
 
-import { GlobalStyle } from './GlobalStyle';
-import Section from './components/section/Section';
-import Navigation from './components/navigation/Navigation';
+import { BrowserRouter } from 'react-router-dom';
+
+import { GlobalStyle } from './themes/GlobalStyle';
+
+import MainRouter from './routers/MainRouter';
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyle />
-      <Navigation />
-      <Section />
-    </>
+      <MainRouter />
+    </BrowserRouter>
   );
 };
 
