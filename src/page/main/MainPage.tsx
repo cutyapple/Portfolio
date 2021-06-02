@@ -10,6 +10,7 @@ const MainPage = () => {
     <S.MainPageWrap>
       <Navigation />
       <S.SectionWrap>
+        <S.TagSpan>&lt;html&gt;</S.TagSpan>
         <IndexSection />
       </S.SectionWrap>
     </S.MainPageWrap>

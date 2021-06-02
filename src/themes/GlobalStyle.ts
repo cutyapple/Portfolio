@@ -1,8 +1,22 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+import { LaBelleAuroreFont, SecularOneFont } from '../fonts';
+
+export const LaBelleAuroreFontName = 'LaBelleAurore';
+export const SecularOneFontName = 'SecularOne';
+
 export const GlobalStyle = createGlobalStyle`
+    @font-face {
+        font-family: LaBelleAurore;
+        src: url(${LaBelleAuroreFont});
+    }
+    @font-face {
+        font-family: SecularOne;
+        src: url(${SecularOneFont});
+    }
+
     * {
-        font-family:Noto Sans KR !important;
+        font-family: Noto Sans KR !important;
     }
     *::-webkit-scrollbar {
         display: none;
