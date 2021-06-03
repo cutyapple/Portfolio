@@ -11,14 +11,12 @@ export const SectionContainer = styled.section`
 `;
 
 export const HoverAnimationTextWrap = styled.h1`
-  /* height: max-content; */
-
   &::before {
     content: '<h1>';
     position: absolute;
     transform: translate(-20px, -20px);
     color: #515152;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: ${LaBelleAuroreFontName} !important;
   }
   &::after {
@@ -28,7 +26,7 @@ export const HoverAnimationTextWrap = styled.h1`
     margin-left: 2rem;
 
     color: #515152;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: ${LaBelleAuroreFontName} !important;
   }
 `;

@@ -12,6 +12,7 @@ const MainPage = () => {
       <S.SectionWrap>
         <S.TagSpan>&lt;html&gt;</S.TagSpan>
         <IndexSection />
+        <S.EndTagSpan>&lt;/html&gt;</S.EndTagSpan>
       </S.SectionWrap>
     </S.MainPageWrap>
   );
