@@ -16,6 +16,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
     "dotenv-webpack": "^7.0.2",
+    "emailjs-com": "^2.6.4",
     "eslint": "^7.15.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",

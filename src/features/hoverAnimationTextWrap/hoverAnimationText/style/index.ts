@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const HoverAnimationText = styled.span`
-  display: ${props => (props.isFirstLoading ? 'inline-block' : 'none')};
+  display: ${props => !props.loadDuration ? "inline-block" : (props.isFirstLoading ? 'inline-block' : 'none')};
   max-height: 4.375rem;
   color: #ffffff;
   font-size: 6rem;

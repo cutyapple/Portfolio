@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { LaBelleAuroreFontName } from '../../../../themes/GlobalStyle';
+import { BounceIn } from '../../../../themes/Animation';
+import { Link } from 'react-router-dom';
 
 export const AboutSectionWrap = styled.section`
     display: flex;
@@ -37,6 +39,10 @@ export const AboutArticle = styled.article`
 export const HeadWrap = styled.div`
     display:  flex;
     flex-direction: column;
+
+    & > h1 > span {
+        color: #08fdd8;
+    }
     
 `;
 
@@ -54,8 +60,21 @@ export const TextWrap = styled.div`
 
 export const ArticleText = styled.p`
     color: #ffffff;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 0 0 30px;
 `;
+
+export const LinkText = styled(Link)`
+    color:#08fdd8;
+    text-decoration: none;
+
+    transition: color 0.3s;
+
+    &:hover {
+        color:#1bcfb3;
+    }
+`
 
 export const EndTag = styled.span`
     position: relative;

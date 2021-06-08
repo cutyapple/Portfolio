@@ -13,7 +13,8 @@ export const NavHeader = styled.header`
   align-items: center;
   width: 100%;
   height: 200px;
-  background: black; 
+  background: black;
+  margin: 0 0 100px 0;
 `;
 
 export const HeaderImg = styled.img`
@@ -33,6 +34,22 @@ export const HeaderSubText = styled.p`
 `;
 
 export const LinkText = styled(Link)`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  color: #909096;
+  text-decoration: none;
+  border-bottom: 1px solid #282828;
+
+  transition: color 0.3s;
+
+  &:hover {
+    color: #08fdd8;
+  }
+`;
+
+export const ButtonText = styled.a`
   display: flex;
   justify-content: center;
   width: 100%;
